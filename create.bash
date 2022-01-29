@@ -78,7 +78,7 @@ function main() {
 
 	# Create the flashable zip
 	cp "${cur_dir}/bin/recovery-flashable.zip" "${out_dir}/flashable.zip"
-	7z a "${out_dir}/flashable.zip" "${out_dir}/logo.img"
+	7z a "${out_dir}/flashable.zip" "${out_dir}/logo.img" &> /dev/null
 
 	echo "Flashable ZIP created"
 
